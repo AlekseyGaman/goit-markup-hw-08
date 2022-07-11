@@ -83,13 +83,17 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1, 15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--main-text-color);
 
   margin-bottom: 12px;
+
+  @include desktop {
+    line-height: 1.15;
+  }
 }
 
 .modal-input {
@@ -167,11 +171,17 @@
     border-color: var(--accent-color);
   }
   &::placeholder {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 1.14;
+
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
+
+    @include desktop {
+      font-size: 12px;
+      line-height: 1.16;
+    }
   }
 }
 

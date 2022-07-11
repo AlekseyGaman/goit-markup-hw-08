@@ -145,26 +145,36 @@
   @include tablet {
     font-size: 12px;
     line-height: 1.16;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   @include desktop {
     font-size: 14px;
     line-height: 1.14;
+    margin-bottom: 0;
   }
 }
 
 .connect__icon {
   display: block;
+  margin-right: 10px;
+  fill: currentColor;
+  size: 100%;
+}
 
-  @include tablet {
-    margin-right: 10px;
-    fill: currentColor;
-  }
+.icon__mail {
+  width: 14px;
+  height: 10px;
   @include desktop {
-    margin-right: 10px;
-    fill: currentColor;
+    width: 16px;
+    height: 12px;
+  }
+}
+.icon__tel {
+  width: 10px;
+  height: 14px;
+  @include desktop {
+    width: 10px;
+    height: 16px;
   }
 }
