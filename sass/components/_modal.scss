@@ -14,7 +14,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+
   padding: 40px;
   min-width: 300px;
   max-height: auto;
@@ -24,6 +24,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms linear;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
